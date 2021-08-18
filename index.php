@@ -116,7 +116,7 @@
 
                 <div class="row pt-5">
                     <div class="col-lg-6 col-sm-6 abt_m">
-                        <img src="img/capablebohz.jpg" style="width: 100%; height: 100;" alt="Anthony Okagba">
+                        <img src="img/CapableBohz.jpg" style="width: 100%; height: 100;" alt="Anthony Okagba">
                     </div>
                     <div class="col-sm-6 abt_m" style="font-size: 21px;">
                         <p>Hello! I'm Anthony, a Full Stack Developer, but mainly a backend developer (PHP)
