@@ -1,3 +1,48 @@
+<?php
+    if(isset($_POST['submit']))
+    {
+    
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        
+        $to = 'anthonyokagba35@gmail.com';
+        $subject = "Anthony's HNG Task";
+        $message = " \r\n
+        Contact Details: \r\n
+        <br>Name: ".$name."\r\n
+        <br>Email: ".$email."\r\n
+        <br>Message: ".$message." \r\n
+        <br>Brought By: Anthony's HNG Task \r\n";
+        $header = "From: $email" . PHP_EOL;
+        $header .= "Reply-To: $email" . PHP_EOL;
+        $header .= "MIME-Version: 1.0" . PHP_EOL;
+        $header .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
+        $header .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+    
+        // echo $to,$subject,$message,$header;
+
+        if(mail($to,$subject,$message,$header)){
+        
+            echo "
+            <script>
+                  alert('Message Sent');
+                  window.location='index.php';
+             </script>";
+        }
+        else 
+        {
+            echo "
+            <script>
+                  alert('Message Not Sent');
+                  window.location='index.php#contact';
+             </script>
+             ";
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -54,18 +99,46 @@
             </div>
         </section>
 
-        <div id="tsparticles"></div>
         <section id="contact" class="conA">
-            <div class="container text-center">
-                <h1 class="intrd">What's Next?</h1>
-                <h2 class="cont">Get In Touch</h2>
-                <p class="contact-me">I am always open for a new job opporunities. You can reach 
-                    out to me if there are job opportunities you'd love me to 
-                    know about. My inbox is always open, Whether you have a question 
-                    or just want to say hi, I'll try my best to get back to you!
-                </p>
-                <div class="pt-5" style="transition-delay: 500ms;">
-                    <a href="mailto:anthonyokagba35@gmail.com" class="bohz"> Say Hello</a>
+            <div class="container ">
+                <div class="text-center">
+                    <h1 class="intrd">What's Next?</h1>
+                    <h2 class="cont">Get In Touch</h2>
+                </div>
+
+                <div class="container text-center col-md-6">
+                    <?php
+                        if(isset($_SESSION['success']) && $_SESSION['success'] !='')
+                        {
+                            echo '<div class="alert alert-info">'.$_SESSION['success'].' <a class="close" data-dismiss="alert">×</a> </div>';
+                            unset($_SESSION['success']);
+                        }
+                        
+                        if(isset($_SESSION['status']) && $_SESSION['status'] !='')
+                        {
+                            echo '<div class="alert alert-danger">'.$_SESSION['status'].' <a class="close" data-dismiss="alert">×</a> </div>';
+                            unset($_SESSION['status']);
+                        }
+                    ?>
+                    <div class="row border">
+                        <form action="" method="POST">
+                            <div class="col-md-12">
+                                <label class="form-label left">Name</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label left">Email</label>
+                                <input type="text" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" name="message" cols="10" rows="3" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="bohz" name="submit" type="submit">Submit form</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
