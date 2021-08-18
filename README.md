@@ -15,17 +15,16 @@ Open the folder 'Anthony-hng-task' with your code editor.
 
 ### Prerequisites
 
-Code Editor (VSCode recommended)
-Web Browser (Google Chrome recommended)
-git
-GitHub
-Terminal (cmd recommended)
+*Code Editor (VSCode recommended)
+*Web Browser (Google Chrome recommended)
+*git
+*GitHub Terminal (cmd recommended)
 
 ## Built With
 
 * [Bootstrap CSS](https://getbootstrap.com/) - A responsive CSS framework
+* [PHP](https://www.php.net/) - A backend language
 
-## Authors
+## Author
 
 * **Anthony Okagba** 
-
