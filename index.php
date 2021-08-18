@@ -22,22 +22,22 @@
     
         // echo $to,$subject,$message,$header;
 
-        if(mail($to,$subject,$message,$header)){
-        
+        if(!mail($to,$subject,$message,$header)){
+
             echo "
             <script>
-                  alert('Message Sent');
-                  window.location='index.php';
-             </script>";
+                alert('Message Sent');
+                window.location='index.php';
+            </script>";
         }
-        else 
+        else
         {
             echo "
             <script>
-                  alert('Message Not Sent');
-                  window.location='index.php#contact';
-             </script>
-             ";
+                alert('Message Not Sent');
+                window.location='index.php#contact';
+            </script>
+            ";
         }
     }
 ?>
@@ -76,6 +76,15 @@
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="#experiences">Experiences</a> -->
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
@@ -96,6 +105,118 @@
                     <a href="mailto:anthonyokagba35@gmail.com" class="bohz"> Get In Touch</a>
                     <a href="https://docs.google.com/document/d/1IQOy1603CCzxy_QvkhXjnc-8HQiK1Ow3fdOMvhlv4oY/edit#" class="bohz"> Resume</a>
                 </div>
+            </div>
+        </section>
+
+        <section id="about" class="abou">
+            <div class="container pt-2">
+                <div class="text-center">
+                    <h1 class="about_mq">About Me </h1>
+                </div>
+
+                <div class="row pt-5">
+                    <div class="col-lg-6 col-sm-6 abt_m">
+                        <img src="img/capablebohz.jpg" style="width: 100%; height: 100;" alt="Anthony Okagba">
+                    </div>
+                    <div class="col-sm-6 abt_m" style="font-size: 21px;">
+                        <p>Hello! I'm Anthony, a Full Stack Developer, but mainly a backend developer (PHP)
+                            based in Abuja, Nigeria 
+                            with three years of solid experience and have completed several related projects. <br>
+                            I enjoy creating user friendly, aesthetically pleasing and functional 
+                            websites, applications, or anything in between. My goal is 
+                            to always build products that improves user experience, adds 
+                            value and increases productivity on web apps.
+                        </p>
+                        <p>I'm a graduate of Computer Science in the <a href="https://unn.edu.ng"> University of Nigeria Nsukka</a> (UNN) 2019/2020 set. 
+                            <!-- I am currently a freelancer at <a href="https://www.upwork.com/freelancers/~011181288fdead1306"> Upwork</a>. -->
+                            <br><br> Internship at <a href="https://internship.zuri.team">ZURI</a>
+                        </p>
+                        <p>Here are few technologies and tools i work with:</p>
+                        
+                        <ul class="tech mt-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Javascript</li>
+                                </div>
+                                <div class="col-6">
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <!-- <li>Laravel</li> -->
+                                    <li>Git &amp; Github</li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="">
+            <div class="text-center pt-2">
+                <h1>Works Done</h1>
+                <p>........</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pt-4">
+                        <div class="card workdone" >
+                            <img src="img/mavirgo store.png" class="card-img-top" alt="mavirgo-store">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Mavirgo Store</h5>
+                                <p class="card-text">Mavirgo Store is an online shopping platform for 
+                                    buying and selling anything in Nigeria. It was created to aid the 
+                                    entrepreneurs who would love to move their business online.</p>
+                                <a href="https://mavirgostore.com.ng/" class="" target="_blank"><i class="fas fa-external-link-alt "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <div class="card workdone" >
+                            <img src="img/Endsars.png" class="card-img-top" alt="jml-foods">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">End Sar Nigeria</h5>
+                                <p class="card-text">A website that show the location of where 
+                                    the nigerian youths are protesting.</p>
+                                <a href="https://end-sars-nigeria.vercel.app/" class="" target="_blank"><i class="fas fa-external-link-alt "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <div class="card workdone" >
+                            <img src="img/Goturtle.png" class="card-img-top" alt="Goturtle">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Goturtle Education</h5>
+                                <p class="card-text">A School website that i recreated for Goturtle Education.
+                                    Its just a simple front-end websites, you can apply for online courses on it.</p>
+                                <a href="https://go-turtle-educations.vercel.app/" class="" target="_blank"><i class="fas fa-external-link-alt "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <div class="card workdone">
+                            <img src="img/peter.png" class="card-img-top" alt="peter-obi">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Gov Peter Obi</h5>
+                                <p class="card-text">A website that i decided to create for the ex-governor of Anamber State. He is 
+                                    my favorite governor in Nigeria. A real business man.</p>
+                                <a href="" class="" target="_blank"><i class="fas fa-external-link-alt "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-4">
+                        <div class="card workdone">
+                            <img src="img/mavirgo digital.png" class="card-img-top" alt="mavirgo digital">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Mavirgo Digital</h5>
+                                <p class="card-text">My tech company that I'm still working on.</p>
+                                <a href="https://mavirgo-digital.vercel.app/" class="" target="_blank"><i class="fas fa-external-link-alt "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -158,6 +279,9 @@
                     <a href="https://instagram.com/AmAnthonyOkagba" title="Instagram" target="_blank"><i class="fab fa-instagram"> </i></a>
                 </div>
                 <h5 class="intrd">&copy; 2021 Designed & Built by Anthony Okagba.</h5>
+                <h5 class="intrd">Task by <a href="https://internship.zuri.team">
+                    <img src="img/zuri.png" style="10%" alt="Zuri Logo"></a>
+                </h5>
             </div>
         </footer>
 
