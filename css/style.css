@@ -1,0 +1,310 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(10, 25, 47);
+    color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.navbar {
+    padding: 20px 20px;
+    box-shadow: black;
+}
+
+.nav-link {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin-left: 70px;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.bg-green {
+    background-color: rgb(10, 25, 47)!important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: rgb(100, 255, 218)!important;
+}
+
+.resume_me {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(100, 255, 218);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.resume_me:hover {
+    background-color: rgba(100, 255, 219, 0.082);
+}
+
+.intr {
+    padding: 150px 0px;
+}
+
+.intrd {
+    color: rgb(100, 255, 218);
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+    /* margin: 0px 0px 20px 3px; */ 
+}
+
+.intrd-name {
+    font-size: 70px;
+    line-height: 1.2;
+    margin: 0px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+}
+
+@media (max-width: 991px) and (min-width: 350px) {
+    .intrd-name {
+        font-size: 50px;
+    }
+}
+
+.intrd-web {
+    font-size: 70px;
+    line-height: 1.2;
+    color: rgb(136, 146, 176);
+}
+
+@media (max-width: 991px) and (min-width: 350px) {
+    .intrd-web {
+        font-size: 45px;
+    }
+}
+
+.rqow {
+    margin-top: 35px;
+    max-width: 600px;
+}
+
+.bohz {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-top: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(100, 255, 218);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.bohz:hover {
+    background-color: rgba(100, 255, 219, 0.082);
+}
+
+a:hover, a:focus {
+    color: rgb(100, 255, 218);
+    text-decoration: none;
+}
+
+.abou {
+    position: relative;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+
+.about_m {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 32px;
+}
+
+.abt_m {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.abt_m li {
+    list-style: none;
+    border: none;
+}
+
+.abt_m a{
+    color: rgb(100, 255, 218);
+}
+
+.tech li {
+    margin-left: -40px;
+}
+
+.tech li::before {
+    content: "▹";
+    padding-right: 1rem;
+    color: rgb(100, 255, 218);
+}
+
+.workdone {
+    background-color: rgb(23, 42, 69);
+    color: rgb(204, 214, 246);
+}
+
+.workdone p {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 972px) {
+    .others {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+.fa-external-link-alt::before {
+    content: "";
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons .folder {
+    font-size: 4rem;
+    height: 5rem;
+    color: rgb(100, 255, 218);
+    font-weight: 200;
+}
+
+.otherProject .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.otherProject .subtitle {
+    font-size: 0.95rem;
+    font-weight: 200;
+    color: rgb(168, 178, 209);
+}
+
+.otherProject ul li {
+    display: inline-block;
+    font-size: 0.82rem;
+    color: rgb(168, 178, 209);
+    padding: 0px 0.5rem;
+}
+
+.cont {
+    font-size: 60px;
+    margin: 0px 0px 20px;
+    font-weight: 600;
+    color: rgb(204, 214, 246);
+}
+
+.contact-me {
+    color: rgb(168, 178, 209);
+    font-size: 17px;
+    width: 100%;
+    margin: auto;
+}
+
+.conA {
+    position: relative;
+    margin: 0px auto;
+    padding: 100px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.endfooter {
+    /* background-color: #129227; */
+    /* padding-top: 30px; */
+    margin-bottom: 30px;
+}
+.copyright h5 {
+    /* font-size: 16px; */
+    text-align: center;
+    /* color: white; */
+}
+
+.social-linksk {
+    /* padding: 10px 0; */
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+a {
+    color: rgb(100, 255, 218);
+}
+
+i {
+    text-decoration: none;
+    list-style: none;
+}
+
+.social-linksk a i{
+    display: inline-block;
+    width: 50px;
+    line-height: inherit;
+    font-size: 100%;
+    position: relative;
+    color: rgb(100, 255, 218) !important;
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
