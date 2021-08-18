@@ -1,17 +1,17 @@
-# My Portfolio
+# Anthony HNGI8 Task
 
-A full-length web project. Created from my Bootstrap CSS Tutorial Series.
+Stage 2 task given by [HNG](https://internship.zuri.team/).
 
 ## Getting Started
 
 You can clone or download this repository to your local machine using the link below:
-<https://github.com/AmAnthonyOkagba/my-portfolio>
+<https://github.com/AmAnthonyOkagba/Anthony-hng-task>
 
 ### How To Use
 
 If you have downloaded the ZIP file of the repository, extract the contents to a prefered directory in your machine.
 
-Open the folder 'my-portfolio' with your code editor.
+Open the folder 'Anthony-hng-task' with your code editor.
 
 ### Prerequisites
 
@@ -27,8 +27,5 @@ Terminal (cmd recommended)
 
 ## Authors
 
-* **Anthony Okagba** - *Project Lead* - [AnthonyOkagba](https://github.com/AmAnthonyOkagba)
+* **Anthony Okagba** 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
